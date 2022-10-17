@@ -1,0 +1,174 @@
+@media screen and (max-width:1440px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(217, 54%, 11%);
+        font-family: Outfit-Light;
+        font-size: 15px;
+    }
+
+    #container {
+        width: 300px;
+        border-radius: 15px;
+        padding: 20px;
+        background-color: hsl(216, 50%, 16%);
+        color: hsl(215, 51%, 70%);
+        margin-bottom: 10px;
+    }
+
+    #img {
+        background-color: hsl(178, 100%, 50%);
+        border-radius: 7.5px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #equilibrium {
+        border-radius: 7.5px;
+        position: fixed;
+        width: 300px;
+        opacity: 1;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    #equilibrium:active {
+        opacity: 0.5;
+        z-index: 0;
+    }
+
+    #view {
+        position: fixed;
+        z-index: 1;
+    }
+
+    #content {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding-top: 15px;
+    }
+
+    #tittle,
+    #desc,
+    #creator {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #tittle,
+    #desc,
+    #coin {
+        margin-bottom: 15px;
+    }
+
+    #tittle {
+        font-family: Outfit-SemiBold;
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+
+    #tittle:active {
+        color: hsl(178, 100%, 50%);
+    }
+
+    #coin {
+        font-family: Outfit-SemiBold;
+        color: hsl(178, 100%, 50%);
+        display: flex;
+    }
+
+    #coin img {
+        width: 10px;
+        margin-right: 10px;
+    }
+
+    #days {
+        display: flex;
+        padding-left: 90px;
+    }
+
+    #days img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    #creator {
+        border-top: 1px solid hsl(215, 32%, 27%);
+        padding-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    #creator img {
+        border: 1px solid hsl(0, 0%, 100%);
+        border-radius: 100%;
+        width: 30px;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    #creator img:active {
+        border: 1px solid hsl(178, 100%, 50%);
+    }
+
+    #name {
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+
+    #name:active {
+        color: hsl(178, 100%, 50%);
+    }
+}
+
+@media screen and (max-width:375px) {
+    #container {
+        width: 80%;
+    }
+
+    #img {
+        width: 280px;
+        height: 280px;
+    }
+
+    #equilibrium {
+        width: 280px;
+    }
+
+    #coin img {
+        height: 17px;
+    }
+
+    #days {
+        padding-left: 85px;
+    }
+}
+
+@font-face {
+    font-family: Outfit-Light;
+    src: url(fonts/Outfit-Light.woff);
+}
+
+@font-face {
+    font-family: Outfit-Regular;
+    src: url(fonts/Outfit-Regular.woff);
+}
+
+@font-face {
+    font-family: Outfit-SemiBold;
+    src: url(fonts/Outfit-SemiBold.woff);
+}
